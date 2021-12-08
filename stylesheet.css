@@ -193,7 +193,7 @@ body {
     position: relative;
     width: 100%;
     height: min(85.648vh, calc(100vh - 155px));
-    background: url(https://github.com/MoomA-0750/UF-Page/blob/main/Mates/Pics/file_2f65263f-acc1-4b90-91dc-0e435bfe1da1_blob.png?raw=true);
+    background: url("https://github.com/MoomA-0750/UF-Page/blob/main/Mates/Pics/file_2f65263f-acc1-4b90-91dc-0e435bfe1da1_blob.png?raw=true");
     background-size: cover;
     filter: drop-shadow(0px 0px 15px rgba(0, 0, 0, 0.5));
     border-radius: 0 0 30px 30px;
