@@ -28,6 +28,10 @@ body {
     margin-bottom: 27px;
 }
 
+.At_A_Glance_Title h1 {
+    text-align: left;
+}
+
 .At_A_Glance_Tiles {
     z-index: 100;
     position: relative;
