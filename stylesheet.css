@@ -3,23 +3,27 @@ body {
     margin: 0;
     background-color: #ffecf5;
     font-family: YakuHanJP, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Kaku Gothic Pro', 'Yu Gothic', Meiryo, "Helvetica Neue", Arial, sans-serif;
+}
 
+/*Hide Scroll-Bar*/
+html::-webkit-scrollbar { 
+    width: 0;
 }
 
 
+/*At A Grance*/
 .At_A_Glance {
+    width: 100vw;
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center;
 }
 
 .At_A_Glance_Contents {
     position: absolute;
-    width: 100vh;
-    left: 0;
-    right: 0;
-    margin: auto;
+    max-width: 1010px;
+    margin: 0 auto;
+
+    margin-top: calc(100vh - 155px - 875.16px);
 }
 
 .At_A_Glance_Title {
@@ -27,13 +31,11 @@ body {
     position: relative;
     color: white;
     font-family: ab-kirigirisu, sans-serif;
+    font-weight: normal;
     font-size: 48px;
     letter-spacing: -0.1em;
     text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
-}
-
-.At_A_Glance_Title h1 {
-    text-align: left;
+    margin-bottom: 27px;
 }
 
 .At_A_Glance_Tiles {
@@ -46,25 +48,34 @@ body {
     row-gap: 28px;
 }
 
+.At_A_Glance_Arrow-Up {
+    padding: 0 471px;
+}
+
 
 /*タイル・中身アリ*/
+
 .Tile1 {
     background: #F7F6F5;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
     border-radius: 15px;
-
     padding: 0 0 0 12px;
 }
 
+
 /*タイル・中身ナシ*/
-.Tile2, .Tile3, .Tile4, .Tile5, .Tile6, .Tile7 {
+
+.Tile2,
+.Tile3,
+.Tile4,
+.Tile5,
+.Tile6,
+.Tile7 {
     background: rgba(247, 246, 245, 0.5);
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
     backdrop-filter: blur(4px);
     border-radius: 15px;
-
     font-family: ab-kirigirisu, sans-serif;
-    font-weight: normal;
     letter-spacing: -0.1em;
     text-align: center;
     display: flex;
@@ -73,14 +84,44 @@ body {
     align-items: center;
 }
 
+
 /*h1のマージン指定*/
-.Tile1_Title h1, .Tile2_Title h1, .Tile3_Title h1, .Tile4_Title h1, .Tile5_Title h1, .Tile6_Title h1, .Tile7_Title h1 {
+
+.Tile1_Title h1,
+.Tile2_Title h1,
+.Tile3_Title h1,
+.Tile4_Title h1,
+.Tile5_Title h1,
+.Tile6_Title h1,
+.Tile7_Title h1,
+.Tile2-1_Name h1,
+.Tile2-2_Name h1,
+.Tile2-3_Name h1,
+.Tile2-4_Name h1,
+.Tile2-5_Name h1,
+.Tile2-6_Name h1,
+.Tile2-7_Name h1 {
     margin: 39px 0 0 0;
     font-size: 36px;
 }
 
-/*h2のボールド外し*/
-.Tile1_Title h2, .Tile2_Title h2, .Tile3_Title h2, .Tile4_Title h2, .Tile5_Title h2, .Tile6_Title h2, .Tile7_Title h2 {
+
+/*h2のボールド外し(無効化なう)*/
+
+.Tile1_Title h2,
+.Tile2_Title h2,
+.Tile3_Title h2,
+.Tile4_Title h2,
+.Tile5_Title h2,
+.Tile6_Title h2,
+.Tile7_Title h2,
+.Tile2-1_Name h2,
+.Tile2-2_Name h2,
+.Tile2-3_Name h2,
+.Tile2-4_Name h2,
+.Tile2-5_Name h2,
+.Tile2-6_Name h2,
+.Tile2-7_Name h2 {
     font-weight: normal;
     margin: 0;
     font-size: 18px;
@@ -118,7 +159,6 @@ body {
     grid-row-end: 5;
 }
 
-
 .Tile5 {
     z-index: 100;
     grid-column-start: 5;
@@ -151,30 +191,42 @@ body {
     padding: 12.5px;
 }
 
+.At_A_Glance_Arrow-Up {
+    z-index: 100;
+    position: relative;
+    width: 68px;
+}
+
+.At_A_Glance_Arrow-Up_svg {
+    display: inline-block;
+}
+
 .At_A_Glance_Background {
     z-index: 0;
     position: relative;
     width: 100%;
-    height: min(85.648vh, calc(100vh - 155px));
+    height: calc(100vh - 155px);
     background: url(/Mates/Pics/file_2f65263f-acc1-4b90-91dc-0e435bfe1da1_blob.png);
     background-size: cover;
     filter: drop-shadow(0px 0px 15px rgba(0, 0, 0, 0.5));
     border-radius: 0 0 30px 30px;
 }
 
+
+/*Menu Bar*/
+
 .Menu_Bar {
-    height: max(14.352vh, 155px);
+    height: 155px;
     margin: 0 36px;
     font-family: inherit;
     text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
-
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
     align-items: center;
 }
 
-.Menu_Bar h1 {
+.Menu_Bar h1,
+.Members_Title {
     font-family: ab-kirigirisu, sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -184,14 +236,330 @@ body {
     margin: 0;
 }
 
-.Menu_Bar h2 {
-    font-family: fot-chiaro-std, sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    font-size: 42px;
+.Menu_Bar_Buttons {
+    display: flex;
+    margin-left: auto;
+}
+
+.Button_Members,
+.Button_Activities {
     color: #660000;
-    margin: 0;
+    background: rgba(247, 246, 245, 0.5);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(4px);
+    border-radius: 15px;
+    padding: 0 50px;
+    margin: 0 25px;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Button_Members p,
+.Button_Activities p {
+    font-family: ab-kirigirisu, sans-serif;
+    font-size: 48px;
+    font-weight: normal;
+    letter-spacing: -0.2em;
+    text-align: center;
 }
 
 
+/*Members*/
+
+.Members {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+.Members_Contents {
+    position: absolute;
+    max-width: 1010px;
+    margin: 0 auto;
+}
+
+.Members_Title {
+    margin-top: 100px;
+    margin-bottom: 27px;
+}
+
+.Members_Tiles {
+    display: grid;
+    grid-template-columns: repeat(6, 145px);
+    grid-auto-rows: 145px;
+    column-gap: 28px;
+    row-gap: 28px;
+}
+
+/*夜兎理 九月*/
+.Tile2-1 {
+    background: linear-gradient(to top, rgba(255,255,255,0) 30%, #fff 55%), url(/Mates/Pics/file_2f65263f-acc1-4b90-91dc-0e435bfe1da1_blob.png);
+    background-size: 110%;
+    background-position: bottom;
+    /*Grid指定*/
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.Tile2-1 h1 {
+    color:#000;
+}
+
+.Tile2-1 h2 {
+    color:#000;
+}
+
+.Tile2-1 > .Social-Link p {
+    color:rgb(255, 255, 255);
+    background: rgb(0, 0, 0);
+}
+
+
+/*あまねむめい*/
+.Tile2-2 {
+    background: linear-gradient(to top, rgba(11,11,28,0) 30%, #0B0B1C 55%), url("/Mates/Pics/Prof_Pics/MoomA/VRChat_3840x2160_2021-10-19_22-12-50.460 (2).png");
+    background-size: 110%;
+    background-position: bottom;
+    /*Grid指定*/
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.Tile2-2 h1 {
+    color:#EABCFF;
+}
+
+.Tile2-2 h2 {
+    color:#A988BD;
+}
+
+.Tile2-2 > .Social-Link p {
+    color:rgba(255, 255, 255, .9);
+    background: #5390FF;
+}
+
+
+/*ぽた*/
+.Tile2-3 {
+    background: linear-gradient(to top, rgba(255,255,255,0) 30%, #fff 55%), url(/Mates/Pics/Prof_Pics/Pota/Screenshots/pota_VRChat_1920x1080_2021-09-16_05-39-37.911.png);
+    background-size: 110%;
+    background-position: bottom;
+    /*Grid指定*/
+    grid-column-start: 5;
+    grid-column-end: 7;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.Tile2-3 h1 {
+    color:#000;
+}
+
+.Tile2-3 h2 {
+    color:#000;
+}
+
+.Tile2-3 > .Social-Link p {
+    color:rgb(255, 255, 255);
+    background: rgb(0, 0, 0);
+}
+
+
+/*かいざー*/
+.Tile2-4 {
+    background: linear-gradient(to top, rgba(253,251,247,0) 30%, #FDFBF7 55%), url(/Mates/Pics/Prof_Pics/Kaiser/Screenshots/aa.png);
+    background-size: 110%;
+    background-position: bottom;
+    
+    /*Grid指定*/
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 5;
+}
+
+.Tile2-4 h1 {
+    color:#C05959;
+}
+
+.Tile2-4 h2 {
+    color:#E19898;
+}
+
+.Tile2-4 > .Social-Link p {
+    color:rgba(255, 255, 255, 0.9);
+    background: #E4AC1B;
+}
+
+
+/*みとてゃん*/
+.Tile2-5 {
+    background: linear-gradient(to top, rgba(255,255,255,0) 30%, #fff 55%), url(/Mates/Pics/file_2f65263f-acc1-4b90-91dc-0e435bfe1da1_blob.png);
+    background-size: 110%;
+    background-position: bottom;
+    /*Grid指定*/
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 5;
+}
+
+.Tile2-5 h1 {
+    color:#000;
+}
+
+.Tile2-5 h2 {
+    color:#000;
+}
+
+.Tile2-5 > .Social-Link p {
+    color:rgb(255, 255, 255);
+    background: rgb(0, 0, 0);
+}
+
+
+/*むむがみ*/
+.Tile2-6 {
+    background: linear-gradient(to top, rgba(255,255,255,0) 30%, #fff 55%), url(/Mates/Pics/file_2f65263f-acc1-4b90-91dc-0e435bfe1da1_blob.png);
+    background-size: 110%;
+    background-position: bottom;
+    /*Grid指定*/
+    grid-column-start: 5;
+    grid-column-end: 7;
+    grid-row-start: 3;
+    grid-row-end: 5;
+}
+
+.Tile2-6 h1 {
+    color:#000;
+}
+
+.Tile2-6 h2 {
+    color:#000;
+}
+
+.Tile2-6 > .Social-Link p {
+    color:rgb(255, 255, 255);
+    background: rgb(0, 0, 0);
+}
+
+
+/*キリエ=エレイソン*/
+.Tile2-7 {
+    background: linear-gradient(to top, rgba(246,249,253,0) 30%, #F6F9FD 55%), url(/Mates/Pics/Prof_Pics/Kyrie/Screenshots/VRChat_1920x1080_2021-08-30_00-29-56.374.png);
+    background-size: 110%;
+    background-position: bottom;
+    /*Grid指定*/
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 5;
+    grid-row-end: 7;
+}
+
+.Tile2-7 h1 {
+    color:#FE67A5;
+    letter-spacing: -0.1em;
+}
+
+.Tile2-7 h2 {
+    color:#FFB4D3;
+}
+
+.Tile2-7 > .Social-Link p {
+    color:rgba(255, 255, 255, 0.9);
+    background: #A19FB2;
+}
+
+
+.Tile2-1,
+.Tile2-2,
+.Tile2-3,
+.Tile2-4,
+.Tile2-5,
+.Tile2-6,
+.Tile2-7 {
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    padding: 0 0 0 12px;
+}
+
+.Social-Link {
+    display: flex;
+}
+
+.Social-Link p {
+    font-size: 18px;
+    text-align: left;
+    font-family: ab-kirigirisu, sans-serif;
+    letter-spacing: -0.2em;
+
+
+    background: rgb(255, 161, 66);
+    border-radius: 15px;
+    padding: 4.5px 15px 4.5px 10px;
+    margin: 10px 10px 0 0;
+}
+
+.Social-Link > a {
+    text-decoration: none;
+}
+
+
+/*Media Query*/
+
+/*scale 0.6*/
+@media screen and (max-width: 1357px), screen and (max-height: 1000px) {
+    .At_A_Glance_Contents {
+        z-index: 100;
+        transform-origin: top;
+        transform: scale(0.6);
+        margin-top: calc(100vh - 93px - calc(875.16px * 0.6));
+    }
+
+    .At_A_Glance_Background {
+        height: calc(100vh - 93px);
+        border-radius: 0 0 18px 18px;
+    }
+
+    .Menu_Bar {
+        height: 93px;
+    }
+    
+    .Menu_Bar h1 {
+        font-size: 38.4px;
+    }
+
+    .Button_Members p,
+    .Button_Activities p {
+        font-size: 28.8px;
+    }
+
+    .Button_Members,
+    .Button_Activities {
+        border-radius: 9px;
+        padding: 0 30px;
+        margin: 0 15px;
+        height: 48px;
+    }
+
+    .Members_Contents {
+        transform-origin: top;
+        transform: scale(0.6);
+    }
+}
+
+/*SmartPhone*/
+@media screen and (orientation: portrait) and (max-width: 540px) {
+}
+
 /*PlayGround*/
+/*background: linear-gradient(to bottom, transparent 0%, transparent 70%, #fff 100%), url(/Mates/Pics/file_2f65263f-acc1-4b90-91dc-0e435bfe1da1_blob.png);*/
+
+/*background: linear-gradient(to bottom, rgba(255,255,255,0), #fff 30%), url(/Mates/Pics/file_2f65263f-acc1-4b90-91dc-0e435bfe1da1_blob.png);*/
