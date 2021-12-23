@@ -53,18 +53,31 @@ html::-webkit-scrollbar {
 }
 
 
-/*タイル・中身アリ*/
-
-.Tile1 {
-    background: #F7F6F5;
+/*タイル*/
+.Tile1,
+.Tile2,
+.Tile3,
+.Tile4,
+.Tile5,
+.Tile6,
+.Tile7 {
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
     border-radius: 15px;
+}
+
+/*タイル・「何かあるよ！」*/
+.Tile1/*,
+.Tile2,
+.Tile3,
+.Tile4,
+.Tile5,
+.Tile6,
+.Tile7*/ {
     padding: 0 0 0 12px;
 }
 
-
-/*タイル・中身ナシ*/
-
+/*タイル・「何もないよ！」*/
+/*.Tile1,*/
 .Tile2,
 .Tile3,
 .Tile4,
@@ -72,9 +85,7 @@ html::-webkit-scrollbar {
 .Tile6,
 .Tile7 {
     background: rgba(247, 246, 245, 0.5);
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
     backdrop-filter: blur(4px);
-    border-radius: 15px;
     font-family: ab-kirigirisu, sans-serif;
     letter-spacing: -0.1em;
     text-align: center;
@@ -128,7 +139,12 @@ html::-webkit-scrollbar {
 }
 
 .Tile1 {
+    background: linear-gradient(to left, rgba(255,255,255,0) 30%, #fff 55%), url(https://github.com/MoomA-0750/UF-Page/blob/main/Mates/Pics/file_2f65263f-acc1-4b90-91dc-0e435bfe1da1_blob.png?raw=true);
+    background-size: 110%;
+    background-position: bottom;
     z-index: 100;
+
+    /*Grid指定*/
     grid-column-start: 1;
     grid-column-end: 5;
     grid-row-start: 1;
@@ -299,6 +315,7 @@ html::-webkit-scrollbar {
     background: linear-gradient(to top, rgba(255,255,255,0) 30%, #fff 55%), url(https://github.com/MoomA-0750/UF-Page/blob/main/Mates/Pics/file_2f65263f-acc1-4b90-91dc-0e435bfe1da1_blob.png?raw=true);
     background-size: 110%;
     background-position: bottom;
+
     /*Grid指定*/
     grid-column-start: 1;
     grid-column-end: 3;
@@ -314,7 +331,7 @@ html::-webkit-scrollbar {
     color:#000;
 }
 
-.Tile2-1 > .Social-Link p {
+.Tile2-1 > .Tags p {
     color:rgb(255, 255, 255);
     background: rgb(0, 0, 0);
 }
@@ -325,6 +342,7 @@ html::-webkit-scrollbar {
     background: linear-gradient(to top, rgba(11,11,28,0) 30%, #0B0B1C 55%), url("https://github.com/MoomA-0750/UF-Page/blob/main/Mates/Pics/Prof_Pics/MoomA/VRChat_3840x2160_2021-10-19_22-12-50.460%20(2).png?raw=true");
     background-size: 110%;
     background-position: bottom;
+
     /*Grid指定*/
     grid-column-start: 3;
     grid-column-end: 5;
@@ -340,7 +358,7 @@ html::-webkit-scrollbar {
     color:#A988BD;
 }
 
-.Tile2-2 > .Social-Link p {
+.Tile2-2 > .Tags p {
     color:rgba(255, 255, 255, .9);
     background: #5390FF;
 }
@@ -351,6 +369,7 @@ html::-webkit-scrollbar {
     background: linear-gradient(to top, rgba(255,255,255,0) 30%, #fff 55%), url(https://github.com/MoomA-0750/UF-Page/blob/main/Mates/Pics/Prof_Pics/Pota/Screenshots/pota_VRChat_1920x1080_2021-09-16_05-39-37.911.png?raw=true);
     background-size: 110%;
     background-position: bottom;
+
     /*Grid指定*/
     grid-column-start: 5;
     grid-column-end: 7;
@@ -366,7 +385,7 @@ html::-webkit-scrollbar {
     color:#000;
 }
 
-.Tile2-3 > .Social-Link p {
+.Tile2-3 > .Tags p {
     color:rgb(255, 255, 255);
     background: rgb(0, 0, 0);
 }
@@ -393,7 +412,7 @@ html::-webkit-scrollbar {
     color:#E19898;
 }
 
-.Tile2-4 > .Social-Link p {
+.Tile2-4 > .Tags p {
     color:rgba(255, 255, 255, 0.9);
     background: #E4AC1B;
 }
@@ -404,6 +423,7 @@ html::-webkit-scrollbar {
     background: linear-gradient(to top, rgba(255,255,255,0) 30%, #fff 55%), url(https://github.com/MoomA-0750/UF-Page/blob/main/Mates/Pics/file_2f65263f-acc1-4b90-91dc-0e435bfe1da1_blob.png?raw=true);
     background-size: 110%;
     background-position: bottom;
+
     /*Grid指定*/
     grid-column-start: 3;
     grid-column-end: 5;
@@ -419,7 +439,7 @@ html::-webkit-scrollbar {
     color:#000;
 }
 
-.Tile2-5 > .Social-Link p {
+.Tile2-5 > .Tags p {
     color:rgb(255, 255, 255);
     background: rgb(0, 0, 0);
 }
@@ -430,6 +450,7 @@ html::-webkit-scrollbar {
     background: linear-gradient(to top, rgba(255,255,255,0) 30%, #fff 55%), url(https://github.com/MoomA-0750/UF-Page/blob/main/Mates/Pics/file_2f65263f-acc1-4b90-91dc-0e435bfe1da1_blob.png?raw=true);
     background-size: 110%;
     background-position: bottom;
+
     /*Grid指定*/
     grid-column-start: 5;
     grid-column-end: 7;
@@ -445,7 +466,7 @@ html::-webkit-scrollbar {
     color:#000;
 }
 
-.Tile2-6 > .Social-Link p {
+.Tile2-6 > .Tags p {
     color:rgb(255, 255, 255);
     background: rgb(0, 0, 0);
 }
@@ -456,6 +477,7 @@ html::-webkit-scrollbar {
     background: linear-gradient(to top, rgba(246,249,253,0) 30%, #F6F9FD 55%), url(https://github.com/MoomA-0750/UF-Page/blob/main/Mates/Pics/Prof_Pics/Kyrie/Screenshots/VRChat_1920x1080_2021-08-30_00-29-56.374.png?raw=true);
     background-size: 110%;
     background-position: bottom;
+
     /*Grid指定*/
     grid-column-start: 1;
     grid-column-end: 3;
@@ -472,7 +494,7 @@ html::-webkit-scrollbar {
     color:#FFB4D3;
 }
 
-.Tile2-7 > .Social-Link p {
+.Tile2-7 > .Tags p {
     color:rgba(255, 255, 255, 0.9);
     background: #A19FB2;
 }
@@ -490,11 +512,12 @@ html::-webkit-scrollbar {
     padding: 0 0 0 12px;
 }
 
-.Social-Link {
+/*タグ*/
+.Tags {
     display: flex;
 }
 
-.Social-Link p {
+.Tags p {
     font-size: 18px;
     text-align: left;
     font-family: ab-kirigirisu, sans-serif;
@@ -507,7 +530,8 @@ html::-webkit-scrollbar {
     margin: 10px 10px 0 0;
 }
 
-.Social-Link > a {
+/*リンクのアンダーバー外す*/
+.Tags > a {
     text-decoration: none;
 }
 
