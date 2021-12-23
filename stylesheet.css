@@ -1,7 +1,7 @@
 @font-face {
     font-family: "RiiPopkkR";
-    src: url("https://github.com/MoomA-0750/UF-Page/raw/main/Mates/Fonts/RiiPopkkR.otf"),
-         url("/fonts/OpenSans-Regular-webfont.woff") format("woff");
+    src: url("https://github.com/MoomA-0750/UF-Page/raw/main/Mates/Fonts/RiiPopkkR/RiiPopkkR.woff"),
+         url("https://github.com/MoomA-0750/UF-Page/raw/main/Mates/Fonts/RiiPopkkR/RiiPopkkR.otf");
   }
 
 body {
@@ -98,7 +98,7 @@ html::-webkit-scrollbar {
 .Tile7 {
     background: rgba(247, 246, 245, 0.5);
     backdrop-filter: blur(4px);
-    font-family: ab-kirigirisu, sans-serif;
+    font-family: "RiiPopkkR", ab-kirigirisu, sans-serif;
     letter-spacing: -0.1em;
     text-align: center;
     display: flex;
