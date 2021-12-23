@@ -1,12 +1,14 @@
 @font-face {
     font-family: "RiiPopkkR";
     src: url("https://github.com/MoomA-0750/UF-Page/raw/main/Mates/Fonts/RiiPopkkR/RiiPopkkR.woff"),
-         url("https://github.com/MoomA-0750/UF-Page/raw/main/Mates/Fonts/RiiPopkkR/RiiPopkkR.otf");
+         url("https://github.com/MoomA-0750/UF-Page/raw/main/Mates/Fonts/RiiPopkkR/RiiPopkkR.otf"),
+         url("https://github.com/MoomA-0750/UF-Page/raw/main/Mates/Fonts/RiiPopkkR/RiiPopkkR.ttf");
 }
 
 @font-face {
     font-family: "IBM Plex Sans";
     src: url("https://github.com/MoomA-0750/UF-Page/raw/main/Mates/Fonts/IBM_Plex_Sans/woff/IBMPlexSans-Regular.woff"),
+         url("https://github.com/MoomA-0750/UF-Page/raw/main/Mates/Fonts/IBM_Plex_Sans/otf/IBMPlexSans-Regular.otf"),
          url("https://github.com/MoomA-0750/UF-Page/raw/main/Mates/Fonts/IBM_Plex_Sans/IBMPlexSans-Regular.ttf");
 }
 
