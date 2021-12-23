@@ -73,7 +73,7 @@ html::-webkit-scrollbar {
 .Tile5,
 .Tile6,
 .Tile7*/ {
-    padding: 0 0 0 12px;
+    padding: 0 0 0 12px;/*文字の左のスペーシング*/
 }
 
 /*タイル・「何もないよ！」*/
