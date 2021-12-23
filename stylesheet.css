@@ -53,6 +53,12 @@ html::-webkit-scrollbar {
 }
 
 
+.twitter-timeline,
+.Tile5 > iframe {
+    border-radius: 15px;
+}
+
+
 /*タイル*/
 .Tile1,
 .Tile2,
