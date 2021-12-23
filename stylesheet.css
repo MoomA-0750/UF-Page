@@ -2,7 +2,13 @@
     font-family: "RiiPopkkR";
     src: url("https://github.com/MoomA-0750/UF-Page/raw/main/Mates/Fonts/RiiPopkkR/RiiPopkkR.woff"),
          url("https://github.com/MoomA-0750/UF-Page/raw/main/Mates/Fonts/RiiPopkkR/RiiPopkkR.otf");
-  }
+}
+
+@font-face {
+    font-family: "IBM Plex Sans";
+    src: url("https://github.com/MoomA-0750/UF-Page/raw/main/Mates/Fonts/IBM_Plex_Sans/woff/IBMPlexSans-Regular.woff"),
+         url("https://github.com/MoomA-0750/UF-Page/raw/main/Mates/Fonts/IBM_Plex_Sans/IBMPlexSans-Regular.ttf");
+}
 
 body {
     width: 100%;
@@ -98,7 +104,7 @@ html::-webkit-scrollbar {
 .Tile7 {
     background: rgba(247, 246, 245, 0.5);
     backdrop-filter: blur(4px);
-    font-family: "RiiPopkkR", ab-kirigirisu, sans-serif;
+    font-family: "IBM Plex Sans",/* "RiiPopkkR",*/ ab-kirigirisu, sans-serif;
     letter-spacing: -0.1em;
     text-align: center;
     display: flex;
