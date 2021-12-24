@@ -162,7 +162,10 @@ a {
     background-size: 110%;
     background-position: bottom;
     z-index: 100;
+}
 
+.Tile1,
+.Tile_Infos {
     /*Grid指定*/
     grid-column-start: 1;
     grid-column-end: 5;
@@ -170,7 +173,8 @@ a {
     grid-row-end: 3;
 }
 
-.Tile2 {
+.Tile2,
+.Tile_SelfIntro {
     z-index: 100;
     grid-column-start: 5;
     grid-column-end: 7;
@@ -178,7 +182,8 @@ a {
     grid-row-end: 3;
 }
 
-.Tile3 {
+.Tile3,
+.Tile_Avatars {
     z-index: 100;
     grid-column-start: 1;
     grid-column-end: 3;
@@ -186,7 +191,8 @@ a {
     grid-row-end: 5;
 }
 
-.Tile4 {
+.Tile4,
+.Tile_Twitter {
     z-index: 100;
     grid-column-start: 3;
     grid-column-end: 5;
@@ -194,7 +200,8 @@ a {
     grid-row-end: 5;
 }
 
-.Tile5 {
+.Tile5,
+.Tile_FavWorlds {
     z-index: 100;
     grid-column-start: 5;
     grid-column-end: 7;
@@ -202,7 +209,8 @@ a {
     grid-row-end: 4;
 }
 
-.Tile6 {
+.Tile6,
+.Tile_VRC {
     z-index: 100;
     grid-column-start: 5;
     grid-column-end: 6;
@@ -214,7 +222,8 @@ a {
     padding: 22.5px;
 }
 
-.Tile7 {
+.Tile7,
+.Tile_AttendedEvents {
     z-index: 100;
     grid-column-start: 6;
     grid-column-end: 7;
@@ -304,19 +313,22 @@ a {
 
 /*Members*/
 
-.Members {
+.Members,
+.Prof {
     width: 100vw;
     display: flex;
     justify-content: center;
 }
 
-.Members_Contents {
+.Members_Contents,
+.Prof_Contents {
     position: absolute;
     max-width: 1010px;
     margin: 0 auto;
 }
 
-.Members_Title {
+.Members_Title,
+.Prof_Title {
     margin-top: 100px;
     margin-bottom: 27px;
 }
@@ -560,7 +572,14 @@ a {
     font-size: 64px;
     letter-spacing: -0.1em;
     text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
-    margin: 0;
+}
+
+.Prof_Tiles {
+    display: grid;
+    grid-template-columns: repeat(6, 145px);
+    grid-auto-rows: 145px;
+    column-gap: 28px;
+    row-gap: 28px;
 }
 
 
