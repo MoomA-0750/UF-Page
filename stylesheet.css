@@ -18,6 +18,11 @@ html::-webkit-scrollbar {
     width: 0;
 }
 
+/*リンクのアンダーバー外す*/
+a {
+    text-decoration: none;
+}
+
 
 /*At A Grance*/
 .At_A_Glance {
@@ -542,11 +547,6 @@ html::-webkit-scrollbar {
     border-radius: 15px;
     padding: 4.5px 15px 4.5px 10px;
     margin: 10px 10px 0 0;
-}
-
-/*リンクのアンダーバー外す*/
-.Tags > a {
-    text-decoration: none;
 }
 
 
