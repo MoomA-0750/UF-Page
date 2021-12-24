@@ -1,8 +1,8 @@
 @font-face {
     font-family: "RiiPopkkR";
-    src: url("https://github.com/MoomA-0750/UF-Page/raw/main/Mates/Fonts/RiiPopkkR/RiiPopkkR.woff"),
-         url("https://github.com/MoomA-0750/UF-Page/raw/main/Mates/Fonts/RiiPopkkR/RiiPopkkR.otf"),
-         url("https://github.com/MoomA-0750/UF-Page/raw/main/Mates/Fonts/RiiPopkkR/RiiPopkkR.ttf");
+    src: url("./Mates/Fonts/RiiPopkkR/RiiPopkkR.woff"),
+         url("./Mates/Fonts/RiiPopkkR/RiiPopkkR.otf"),
+         url("./Mates/Fonts/RiiPopkkR/RiiPopkkR.ttf");
 }
 
 
@@ -136,7 +136,7 @@ a {
 }
 
 
-/*h2のボールド外し(無効化なう)*/
+/*h2のボールド外し*/
 
 .Tile1_Title h2,
 .Tile2_Title h2,
@@ -158,7 +158,7 @@ a {
 }
 
 .Tile1 {
-    background: linear-gradient(to left, rgba(255,255,255,0) 30%, #fff 55%), url(https://github.com/MoomA-0750/UF-Page/blob/main/Mates/Pics/file_2f65263f-acc1-4b90-91dc-0e435bfe1da1_blob.png?raw=true);
+    background: linear-gradient(to left, rgba(255,255,255,0) 30%, #fff 55%), url(./Mates/Pics/file_2f65263f-acc1-4b90-91dc-0e435bfe1da1_blob.png);
     background-size: 110%;
     background-position: bottom;
     z-index: 100;
@@ -241,7 +241,7 @@ a {
     position: relative;
     width: 100%;
     height: calc(100vh - 155px);
-    background: url(https://raw.githubusercontent.com/MoomA-0750/UF-Page/main/Mates/Pics/file_2f65263f-acc1-4b90-91dc-0e435bfe1da1_blob.png);
+    background: url(./Mates/Pics/file_2f65263f-acc1-4b90-91dc-0e435bfe1da1_blob.png);
     background-size: cover;
     filter: drop-shadow(0px 0px 15px rgba(0, 0, 0, 0.5));
     border-radius: 0 0 30px 30px;
@@ -331,7 +331,7 @@ a {
 
 /*夜兎理 九月*/
 .Tile2-1 {
-    background: linear-gradient(to top, rgba(255,255,255,0) 30%, #fff 55%), url(https://github.com/MoomA-0750/UF-Page/blob/main/Mates/Pics/file_2f65263f-acc1-4b90-91dc-0e435bfe1da1_blob.png?raw=true);
+    background: linear-gradient(to top, rgba(255,255,255,0) 30%, #fff 55%), url(./Mates/Pics/file_2f65263f-acc1-4b90-91dc-0e435bfe1da1_blob.png);
     background-size: 110%;
     background-position: bottom;
 
@@ -358,7 +358,7 @@ a {
 
 /*あまねむめい*/
 .Tile2-2 {
-    background: linear-gradient(to top, rgba(11,11,28,0) 30%, #0B0B1C 55%), url("https://github.com/MoomA-0750/UF-Page/blob/main/Mates/Pics/Prof_Pics/MoomA/VRChat_3840x2160_2021-10-19_22-12-50.460%20(2).png?raw=true");
+    background: linear-gradient(to top, rgba(11,11,28,0) 30%, #0B0B1C 55%), url("./Mates/Pics/Prof_Pics/MoomA/VRChat_3840x2160_2021-10-19_22-12-50.460%20(2).png");
     background-size: 110%;
     background-position: bottom;
 
@@ -385,7 +385,7 @@ a {
 
 /*ぽた*/
 .Tile2-3 {
-    background: linear-gradient(to top, rgba(255,255,255,0) 30%, #fff 55%), url(https://github.com/MoomA-0750/UF-Page/blob/main/Mates/Pics/Prof_Pics/Pota/Screenshots/pota_VRChat_1920x1080_2021-09-16_05-39-37.911.png?raw=true);
+    background: linear-gradient(to top, rgba(255,255,255,0) 30%, #fff 55%), url(./Mates/Pics/Prof_Pics/Pota/Screenshots/pota_VRChat_1920x1080_2021-09-16_05-39-37.911.png);
     background-size: 110%;
     background-position: bottom;
 
@@ -412,7 +412,7 @@ a {
 
 /*かいざー*/
 .Tile2-4 {
-    background: linear-gradient(to top, rgba(253,251,247,0) 30%, #FDFBF7 55%), url(https://github.com/MoomA-0750/UF-Page/blob/main/Mates/Pics/Prof_Pics/Kaiser/Screenshots/aa.png?raw=true);
+    background: linear-gradient(to top, rgba(253,251,247,0) 30%, #FDFBF7 55%), url(./Mates/Pics/Prof_Pics/Kaiser/Screenshots/aa.png);
     background-size: 110%;
     background-position: bottom;
     
@@ -439,7 +439,7 @@ a {
 
 /*みとてゃん*/
 .Tile2-5 {
-    background: linear-gradient(to top, rgba(255,255,255,0) 30%, #fff 55%), url(https://github.com/MoomA-0750/UF-Page/blob/main/Mates/Pics/file_2f65263f-acc1-4b90-91dc-0e435bfe1da1_blob.png?raw=true);
+    background: linear-gradient(to top, rgba(255,255,255,0) 30%, #fff 55%), url(./Mates/Pics/file_2f65263f-acc1-4b90-91dc-0e435bfe1da1_blob.png);
     background-size: 110%;
     background-position: bottom;
 
@@ -466,7 +466,7 @@ a {
 
 /*むむがみ*/
 .Tile2-6 {
-    background: linear-gradient(to top, rgba(255,255,255,0) 30%, #fff 55%), url(https://github.com/MoomA-0750/UF-Page/blob/main/Mates/Pics/file_2f65263f-acc1-4b90-91dc-0e435bfe1da1_blob.png?raw=true);
+    background: linear-gradient(to top, rgba(255,255,255,0) 30%, #fff 55%), url(./Mates/Pics/file_2f65263f-acc1-4b90-91dc-0e435bfe1da1_blob.png);
     background-size: 110%;
     background-position: bottom;
 
@@ -493,7 +493,7 @@ a {
 
 /*キリエ=エレイソン*/
 .Tile2-7 {
-    background: linear-gradient(to top, rgba(246,249,253,0) 30%, #F6F9FD 55%), url(https://github.com/MoomA-0750/UF-Page/blob/main/Mates/Pics/Prof_Pics/Kyrie/Screenshots/VRChat_1920x1080_2021-08-30_00-29-56.374.png?raw=true);
+    background: linear-gradient(to top, rgba(246,249,253,0) 30%, #F6F9FD 55%), url(./Mates/Pics/Prof_Pics/Kyrie/Screenshots/VRChat_1920x1080_2021-08-30_00-29-56.374.png);
     background-size: 110%;
     background-position: bottom;
 
@@ -547,6 +547,20 @@ a {
     border-radius: 15px;
     padding: 4.5px 15px 4.5px 10px;
     margin: 10px 10px 0 0;
+}
+
+
+
+/*Prof HTML*/
+
+.Prof_Title {
+    color: white;
+    font-family: ab-kirigirisu, sans-serif;
+    font-weight: normal;
+    font-size: 64px;
+    letter-spacing: -0.1em;
+    text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
+    margin: 0;
 }
 
 
