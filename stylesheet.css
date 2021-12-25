@@ -354,7 +354,8 @@ a {
 
 /*夜兎理 九月*/
 .Tile2-1 {
-    background: linear-gradient(to top, rgba(255,255,255,0) 30%, #fff 55%), url(./Mates/Pics/file_2f65263f-acc1-4b90-91dc-0e435bfe1da1_blob.png);
+    background: linear-gradient(to top, rgba(255,255,255,0) 30%, #fff 55%),
+                url(./Mates/Pics/file_2f65263f-acc1-4b90-91dc-0e435bfe1da1_blob.png);
     background-size: 110%;
     background-position: bottom;
 
@@ -381,7 +382,8 @@ a {
 
 /*あまねむめい*/
 .Tile2-2 {
-    background: linear-gradient(to top, rgba(11,11,28,0) 30%, #0B0B1C 55%), url("./Mates/Pics/Prof_Pics/MoomA/VRChat_3840x2160_2021-10-19_22-12-50.460%20(2).png");
+    background: linear-gradient(to top, rgba(11,11,28,0) 30%, #0B0B1C 55%),
+                url("./Mates/Pics/Prof_Pics/MoomA/VRChat_3840x2160_2021-10-19_22-12-50.460%20(2).png");
     background-size: 110%;
     background-position: bottom;
 
@@ -408,7 +410,8 @@ a {
 
 /*ぽた*/
 .Tile2-3 {
-    background: linear-gradient(to top, rgba(255,255,255,0) 30%, #fff 55%), url(./Mates/Pics/Prof_Pics/Pota/Screenshots/pota_VRChat_1920x1080_2021-09-16_05-39-37.911.png);
+    background: linear-gradient(to top, rgba(255,255,255,0) 30%, #fff 55%),
+                url(./Mates/Pics/Prof_Pics/Pota/Screenshots/pota_VRChat_1920x1080_2021-09-16_05-39-37.911.png);
     background-size: 110%;
     background-position: bottom;
 
@@ -435,7 +438,8 @@ a {
 
 /*かいざー*/
 .Tile2-4 {
-    background: linear-gradient(to top, rgba(253,251,247,0) 30%, #FDFBF7 55%), url(./Mates/Pics/Prof_Pics/Kaiser/Screenshots/aa.png);
+    background: linear-gradient(to top, rgba(253,251,247,0) 30%, #FDFBF7 55%),
+                url(./Mates/Pics/Prof_Pics/Kaiser/Screenshots/aa.png);
     background-size: 110%;
     background-position: bottom;
     
@@ -462,7 +466,8 @@ a {
 
 /*みとてゃん*/
 .Tile2-5 {
-    background: linear-gradient(to top, rgba(255,255,255,0) 30%, #fff 55%), url(./Mates/Pics/file_2f65263f-acc1-4b90-91dc-0e435bfe1da1_blob.png);
+    background: linear-gradient(to top, rgba(255,255,255,0) 30%, #fff 55%),
+                url(./Mates/Pics/file_2f65263f-acc1-4b90-91dc-0e435bfe1da1_blob.png);
     background-size: 110%;
     background-position: bottom;
 
@@ -489,7 +494,8 @@ a {
 
 /*むむがみ*/
 .Tile2-6 {
-    background: linear-gradient(to top, rgba(255,255,255,0) 30%, #fff 55%), url(./Mates/Pics/file_2f65263f-acc1-4b90-91dc-0e435bfe1da1_blob.png);
+    background: linear-gradient(to top, rgba(255,255,255,0) 30%, #fff 55%),
+                url(./Mates/Pics/file_2f65263f-acc1-4b90-91dc-0e435bfe1da1_blob.png);
     background-size: 110%;
     background-position: bottom;
 
@@ -516,7 +522,8 @@ a {
 
 /*キリエ=エレイソン*/
 .Tile2-7 {
-    background: linear-gradient(to top, rgba(246,249,253,0) 30%, #F6F9FD 55%), url(./Mates/Pics/Prof_Pics/Kyrie/Screenshots/VRChat_1920x1080_2021-08-30_00-29-56.374.png);
+    background: linear-gradient(to top, rgba(246,249,253,0) 30%, #F6F9FD 55%),
+                url(./Mates/Pics/Prof_Pics/Kyrie/Screenshots/VRChat_1920x1080_2021-08-30_00-29-56.374.png);
     background-size: 110%;
     background-position: bottom;
 
@@ -669,6 +676,10 @@ a {
 /*MoomA*/
 .Prof_MoomA_Body {
     background-image: url(./Mates/Pics/file_2f65263f-acc1-4b90-91dc-0e435bfe1da1_blob.png);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 
