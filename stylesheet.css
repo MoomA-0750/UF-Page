@@ -10,8 +10,9 @@ body {
     width: 100%;
     margin: 0;
     background-color: #ffecf5;
-    font-family: YakuHanJP, "DS-showwa70", "RiiPopkkR", -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Kaku Gothic Pro', 'Yu Gothic', Meiryo, "Helvetica Neue", Arial, sans-serif;
+    font-family: YakuHanJP, ibm-plex-sans/*"DS-showwa70"*/, source-han-sans-japanese, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Kaku Gothic Pro', 'Yu Gothic', Meiryo, "Helvetica Neue", Arial, sans-serif;
 }
+
 
 /*Hide Scroll-Bar*/
 html::-webkit-scrollbar { 
@@ -84,14 +85,20 @@ a {
     border-radius: 15px;
 }
 
-/*タイル・「何かあるよ！」*/
-.Tile1/*,
+/*タイル・「何かあるよ！」・文字の左のスペーシング*/
+.Tile1,/*
 .Tile2,
 .Tile3,
 .Tile4,
 .Tile5,
 .Tile6,
-.Tile7*/ {
+.Tile7,*/
+.Tile_Infos,
+.Tile_SelfIntro,
+.Tile_Avatars,
+.Tile_FavWorlds,
+.Tile_VRC,
+.Tile_AttendedEvents {
     padding: 0 0 0 12px;/*文字の左のスペーシング*/
 }
 
@@ -157,6 +164,8 @@ a {
     font-size: 18px;
 }
 
+/*Tiles At_A_Glance, Prof*/
+
 .Tile1 {
     background: linear-gradient(to left, rgba(255,255,255,0) 30%, #fff 55%), url(./Mates/Pics/file_2f65263f-acc1-4b90-91dc-0e435bfe1da1_blob.png);
     background-size: 110%;
@@ -192,7 +201,8 @@ a {
 }
 
 .Tile4,
-.Tile_Twitter {
+.Tile_Twitter,
+.twitter-timeline {
     z-index: 100;
     grid-column-start: 3;
     grid-column-end: 5;
@@ -270,7 +280,8 @@ a {
 }
 
 .Menu_Bar h1,
-.Members_Title {
+.Members_Title,
+.Prof_Menu_Bar h1 {
     font-family: ab-kirigirisu, sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -311,7 +322,7 @@ a {
 }
 
 
-/*Members*/
+/*Members, Prof*/
 
 .Members,
 .Prof {
@@ -574,12 +585,79 @@ a {
     text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
 }
 
+.Prof_Title > span,
+.Prof_Menu_Bar_Title > h1 > span {
+    font-size: 36px;
+    opacity: 0.5;
+}
+
 .Prof_Tiles {
     display: grid;
     grid-template-columns: repeat(6, 145px);
     grid-auto-rows: 145px;
     column-gap: 28px;
     row-gap: 28px;
+}
+
+.Tile_Infos,
+.Tile_SelfIntro,
+.Tile_Avatars,
+.Tile_Twitter,
+.Tile_FavWorlds,
+.Tile_VRC,
+.Tile_AttendedEvents {
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+}
+
+.Tile_Infos {
+    background: linear-gradient(to left, rgba(255,255,255,0) 30%, #fff 55%), url(./Mates/Pics/file_2f65263f-acc1-4b90-91dc-0e435bfe1da1_blob.png);
+    background-size: 110%;
+    background-position: bottom;
+}
+
+/*Menu Bar*/
+
+.Prof_Menu_Bar_Buttons {
+    display: flex;
+}
+
+.Prof_Menu_Bar {
+    height: 100px;
+    margin: 0 36px;
+    font-family: inherit;
+    text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.Button_Back {
+    color: #660000;
+    background: rgba(247, 246, 245, 0.5);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(4px);
+    border-radius: 15px;
+    padding: 0 50px 0 5px;
+    margin: 0 25px;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Button_Back p {
+    font-family: ab-kirigirisu, sans-serif;
+    font-size: 48px;
+    font-weight: normal;
+    letter-spacing: -0.2em;
+    text-align: center;
+}
+
+.Button_Back > p > span {
+    padding-right: 16px;
+    opacity: 0.5;
 }
 
 
