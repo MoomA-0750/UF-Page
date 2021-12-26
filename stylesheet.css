@@ -617,6 +617,31 @@ a {
     border-radius: 15px;
 }
 
+/*Tile_Infosの中身*/
+
+.Info_Bubbles1 > h1,
+.Info_Bubbles2 > h1,
+.Info_Bubbles3 > h1,
+.Info_Bubbles4 > h1,
+.Info_Bubbles5 > h1,
+.Info_Bubbles6 > h1,
+.Info_Bubbles7 > h1 {
+    z-index: 20;
+    position: relative;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: normal;
+    text-align: left;
+    font-family: ab-kirigirisu, sans-serif;
+    letter-spacing: -0.2em;
+
+    background: rgba(235, 129, 125, 1);
+    border-radius: 15px 15px 15px 5px;
+    padding: 4.5px 15px 4.5px 10px;
+    margin: 10px 10px 0 0;
+}
+
+
 .Tile_Infos {
     background: linear-gradient(to left, rgba(255,255,255,0) 30%, #fff 55%), url(./Mates/Pics/file_2f65263f-acc1-4b90-91dc-0e435bfe1da1_blob.png);
     background-size: 110%;
