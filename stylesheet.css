@@ -619,16 +619,15 @@ a {
 
 /*Tile_Infosの中身*/
 
-.Info_Bubbles1 > h1,
-.Info_Bubbles2 > h1,
-.Info_Bubbles3 > h1,
-.Info_Bubbles4 > h1,
-.Info_Bubbles5 > h1,
-.Info_Bubbles6 > h1,
-.Info_Bubbles7 > h1 {
+.Info_Bubbles1 h1,
+.Info_Bubbles2 h1,
+.Info_Bubbles3 h1,
+.Info_Bubbles4 h1,
+.Info_Bubbles5 h1,
+.Info_Bubbles6 h1,
+.Info_Bubbles7 h1 {
     z-index: 20;
     position: relative;
-    display: inline-block;
     font-size: 18px;
     font-weight: normal;
     text-align: left;
@@ -639,6 +638,37 @@ a {
     border-radius: 15px 15px 15px 5px;
     padding: 4.5px 15px 4.5px 10px;
     margin: 10px 10px 0 0;
+}
+
+.Info_Bubbles1 h2,
+.Info_Bubbles2 h2,
+.Info_Bubbles3 h2,
+.Info_Bubbles4 h2,
+.Info_Bubbles5 h2,
+.Info_Bubbles6 h2,
+.Info_Bubbles7 h2 {
+    z-index: 10;
+    position: absolute;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: left;
+    padding: 12px 0 12px 10px;
+
+    width: 206px;
+
+    background: #FBF9F9;
+    box-shadow: -5px -5px 4px rgba(233, 233, 233, 0.25), 5px 5px 15px #DAD6D6;
+    border-radius: 5px 25px 25px 25px;
+}
+
+.Info_Bubbles1,
+.Info_Bubbles2,
+.Info_Bubbles3,
+.Info_Bubbles4,
+.Info_Bubbles5,
+.Info_Bubbles6,
+.Info_Bubbles7 {
+    display: flex;
 }
 
 
