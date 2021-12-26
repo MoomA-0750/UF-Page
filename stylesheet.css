@@ -1,16 +1,8 @@
-@font-face {
-    font-family: "RiiPopkkR";
-    src: url("./Mates/Fonts/RiiPopkkR/RiiPopkkR.woff"),
-         url("./Mates/Fonts/RiiPopkkR/RiiPopkkR.otf"),
-         url("./Mates/Fonts/RiiPopkkR/RiiPopkkR.ttf");
-}
-
-
 body {
     width: 100%;
     margin: 0;
     background-color: #ffecf5;
-    font-family: YakuHanJP, ibm-plex-sans/*"DS-showwa70"*/, source-han-sans-japanese, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Kaku Gothic Pro', 'Yu Gothic', Meiryo, "Helvetica Neue", Arial, sans-serif;
+    font-family: YakuHanJP, ibm-plex-sans, source-han-sans-japanese, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Kaku Gothic Pro', 'Yu Gothic', Meiryo, "Helvetica Neue", Arial, sans-serif;
 }
 
 
@@ -137,7 +129,12 @@ a {
 .Tile2-4_Name h1,
 .Tile2-5_Name h1,
 .Tile2-6_Name h1,
-.Tile2-7_Name h1 {
+.Tile2-7_Name h1,
+.Tile_SelfIntro h1,
+.Tile_Avatars h1,
+.Tile_FavWorlds h1/*,
+.Tile_VRC h1,
+.Tile_AttendedEvents h1*/ {
     margin: 39px 0 0 0;
     font-size: 36px;
 }
@@ -158,7 +155,12 @@ a {
 .Tile2-4_Name h2,
 .Tile2-5_Name h2,
 .Tile2-6_Name h2,
-.Tile2-7_Name h2 {
+.Tile2-7_Name h2,
+.Tile_SelfIntro h2,
+.Tile_Avatars h2,
+.Tile_FavWorlds h2,
+.Tile_VRC h2,
+.Tile_AttendedEvents h2 {
     font-weight: normal;
     margin: 0;
     font-size: 18px;
@@ -383,7 +385,7 @@ a {
 /*あまねむめい*/
 .Tile2-2 {
     background: linear-gradient(to top, rgba(11,11,28,0) 30%, #0B0B1C 55%),
-                url("./Mates/Pics/Prof_Pics/MoomA/VRChat_3840x2160_2021-10-19_22-12-50.460%20(2).png");
+                url("./Mates/Pics/Prof_Pics/MoomA/Screenshots/VRChat_3840x2160_2021-10-19_22-12-50.460%20(2).png");
     background-size: 110%;
     background-position: bottom;
 
@@ -627,7 +629,6 @@ a {
 .Info_Bubbles6 h1,
 .Info_Bubbles7 h1 {
     z-index: 20;
-    position: relative;
     font-size: 18px;
     font-weight: normal;
     text-align: left;
@@ -649,16 +650,39 @@ a {
 .Info_Bubbles7 h2 {
     z-index: 10;
     position: absolute;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: bold;
     text-align: left;
-    padding: 12px 0 12px 10px;
+    padding: 10px 15px 10px 15px;
 
-    width: 206px;
+    margin-top: 25px;
 
     background: #FBF9F9;
     box-shadow: -5px -5px 4px rgba(233, 233, 233, 0.25), 5px 5px 15px #DAD6D6;
     border-radius: 5px 25px 25px 25px;
+}
+
+
+/*バブルの幅*/
+.Info_Bubbles1 h2,
+.Info_Bubbles2 h2,
+.Info_Bubbles3 h2,
+.Info_Bubbles4 h2,
+.Info_Bubbles5 h2,
+.Info_Bubbles7 h2 {
+    width: 206px;
+}
+
+/*誕生日*/
+.Info_Bubbles6 > .h2-1 {
+    width: 145px;
+}
+
+/*血液型*/
+.Info_Bubbles6 > .h2-2 {
+    width: 19px;
+    border-radius: 25px;
+    margin-left: 187px;
 }
 
 .Info_Bubbles1,
@@ -671,12 +695,109 @@ a {
     display: flex;
 }
 
+.Info_Bubbles1,
+.Info_Bubbles2,
+.Info_Bubbles3,
+.Info_Bubbles4 {
+    margin: 0 0 40px 0;
+}
+
+.Info_Bubbles5,
+.Info_Bubbles6,
+.Info_Bubbles7 {
+    margin: 0 0 40px 246px;
+}
+
+.Infos_Right {
+    margin-top: -270px;
+}
+
 
 .Tile_Infos {
     background: linear-gradient(to left, rgba(255,255,255,0) 30%, #fff 55%), url(./Mates/Pics/file_2f65263f-acc1-4b90-91dc-0e435bfe1da1_blob.png);
     background-size: 110%;
     background-position: bottom;
 }
+
+.Info_Bubbles5 > h2 > span {
+    font-size: 10px;
+    opacity: 50%;
+}
+
+/* Prof HTML/Background */
+
+/*MoomA*/
+.Prof_Tiles_MoomA > .Tile_SelfIntro {
+    background: linear-gradient(to top, rgba(255,255,255,0) 30%, #fff 55%),
+                url(./Mates/Pics/Prof_Pics/Pota/Screenshots/pota_VRChat_1920x1080_2021-09-16_05-39-37.911.png);
+    background-size: 110%;
+    background-position: bottom;
+}
+
+.Prof_Tiles_MoomA > .Tile_Avatars {
+    background: linear-gradient(to top, rgba(241,197,216,1), rgba(247,246,245,1) 30%);
+}
+
+.Prof_Tiles_MoomA > .Tile_FavWorlds {
+    background: linear-gradient(to top, rgba(0,0,0,0.25), rgba(0,0,0,0.25)),
+                url(./Mates/Pics/Prof_Pics/MoomA/FavWorlds/file_c388e424-705f-47aa-9a71-07c998801fa0.9d6938205cba7f46bda21606ee9b87bdad604b15a626a6d4f87d231387998da7.5.thumbnail-256.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.Prof_Tiles_MoomA > .Tile_FavWorlds > a > .Tile_FavWorlds_Title h1,
+.Prof_Tiles_MoomA > .Tile_FavWorlds > a > .Tile_FavWorlds_Title h2 {
+    color: white;
+    opacity: 0.8;
+}
+
+.Tile_VRC {
+    background: linear-gradient(to top, rgba(0,0,0,0.6), rgba(0,0,0,0) 50%),
+                url(./Mates/Pics/Prof_Pics/MoomA/Icons/file_fdb28550-213f-4947-8f2f-4d05e940df7d_camera_user_icon.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    align-items: flex-end;
+}
+
+.Tile_VRC_Title h1 {
+    font-weight: normal;
+    margin: 0;
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.Tile_AttendedEvents {
+    background: linear-gradient(to top, rgba(0,0,0,0.6), rgba(0,0,0,0) 50%),
+                url(./Mates/Pics/Prof_Pics/MoomA/Icons/file_fdb28550-213f-4947-8f2f-4d05e940df7d_camera_user_icon.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    align-items: flex-end;
+}
+
+.Tile_AttendedEvents_Title h1 {
+    font-weight: normal;
+    margin: 0;
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.Prof_MoomA_Body {
+    background-image: url(./Mates/Pics/Prof_Pics/MoomA/Screenshots/VRChat_1920x1080_2021-10-11_03-20-26.367.png);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 
 /*Menu Bar*/
 
@@ -726,16 +847,6 @@ a {
     opacity: 0.5;
 }
 
-/*Prof_Background*/
-
-/*MoomA*/
-.Prof_MoomA_Body {
-    background-image: url(./Mates/Pics/file_2f65263f-acc1-4b90-91dc-0e435bfe1da1_blob.png);
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-}
 
 
 /*Media Query*/
