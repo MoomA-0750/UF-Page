@@ -853,7 +853,8 @@ a {
 
 /*scale 0.6*/
 @media screen and (max-width: 1357px), screen and (max-height: 1000px) {
-    .At_A_Glance_Contents {
+    .At_A_Glance_Contents,
+    .Prof_Contents {
         z-index: 100;
         transform-origin: top;
         transform: scale(0.6);
@@ -868,18 +869,30 @@ a {
     .Menu_Bar {
         height: 93px;
     }
+
+    .Prof_Menu_Bar {
+        height: 60px;
+    }
     
-    .Menu_Bar h1 {
+    .Menu_Bar h1,
+    .Prof_Menu_Bar_Title h1 {
         font-size: 38.4px;
     }
 
+    .Prof_Title > span,
+    .Prof_Menu_Bar_Title > h1 > span {
+        font-size: 21.6px;
+    }
+
     .Button_Members p,
-    .Button_Activities p {
+    .Button_Activities p,
+    .Button_Back p {
         font-size: 28.8px;
     }
 
     .Button_Members,
-    .Button_Activities {
+    .Button_Activities,
+    .Button_Back {
         border-radius: 9px;
         padding: 0 30px;
         margin: 0 15px;
