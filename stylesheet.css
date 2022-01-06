@@ -903,6 +903,11 @@ a {
         transform-origin: top;
         transform: scale(0.6);
     }
+
+    .twitter-timeline {
+        width: 318px;
+        height: 318px;
+    }
 }
 
 /*SmartPhone*/
