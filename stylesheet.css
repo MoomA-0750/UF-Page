@@ -281,6 +281,12 @@ a {
     align-items: center;
 }
 
+.Menu_Bar > img {
+    max-width: 70%;
+    max-height: 70%;
+    padding: 0 15px;
+}
+
 .Menu_Bar h1,
 .Members_Title,
 .Prof_Menu_Bar h1 {
@@ -288,6 +294,13 @@ a {
     font-weight: 400;
     font-style: normal;
     font-size: 64px;
+    letter-spacing: -0.1em;
+    color: #660000;
+    margin: 0;
+}
+
+.Menu_Bar h2 {
+    font-family: ab-kirigirisu, sans-serif;
     letter-spacing: -0.1em;
     color: #660000;
     margin: 0;
@@ -338,6 +351,7 @@ a {
     position: absolute;
     max-width: 1010px;
     margin: 0 auto;
+    padding-bottom: 100px;
 }
 
 .Members_Title,
