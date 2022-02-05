@@ -601,7 +601,7 @@ a {
 .Footer {
     display: flex;
     position: absolute;
-    margin-top: 781px;/*メンバータイル分落としてる*/
+    margin-top: 1301px;/*メンバータイル分落としてる*/
 	margin-bottom: 30px;
 	width: 100%;
     height: auto;
@@ -969,7 +969,13 @@ a {
         width: 318px;
         height: 318px;
     }
+
+    /*Footer*/
+    .Footer {
+        margin-top: 781px;/*メンバータイル分落としてる*/
+    }
 }
+
 
 /*SmartPhone*/
 @media screen and (orientation: portrait) and (max-width: 540px) {
